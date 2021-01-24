@@ -2,8 +2,8 @@
 ## Site Link / Index
 [Site Link](https://is218-spring21.github.io/Git-Collab-Tutorial/)
 ## Contributers
-Ido Tanne [@Itanne99](https://github.com/itanne99)
-Johnny Pillacela
+Ido Tanne [@Itanne99](https://github.com/itanne99) <br>
+Johnny Pillacela <br>
 Mohammed Uddin
 ## Changelog
 ~~Link to Dev Blog(https://google.com)~~
