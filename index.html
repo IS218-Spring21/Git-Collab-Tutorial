@@ -1,92 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Git Collab Tutorial</title>
-	<!-- Bootstrap -->
-	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Git Collab Tutorial</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<div class="navContent">
-			<a class="navbar-brand" href="#">Git Collab</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
-					class="navbar-toggler-icon"></span></button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active"><a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a></li>
-					<li class="nav-item"><a class="nav-link" href="docs/group.html">Group Tutorial</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	
-	<div class="container" style="height: 100vh; margin-top: 20px">
-		<div class="row">
-			<h3>Repository</h3>
-			<!--Add Content Here-->
-		</div>
-		<div class="row">
-			<h3>Clone</h3>
-			<!--Add Content Here-->
-		</div>
-		<div class="row">
-			<h3>Fork</h3>
-			<!--Add Content Here-->
-		</div>
-		<div class="row">
-			<h3>Branch</h3>
-			<!--Add Content Here-->
-		</div>
-		<div class="row">
-			<h3>Commit</h3>
-			<!--Add Content Here-->
-		</div>
-		<div class="row">
-			<h3>Merge</h3>
-			<!--Add Content Here-->
-		</div>
-		<div class="row">
-			<h3>Checkout</h3>
-			<!--Add Content Here-->
-		</div>
-		<div class="row">
-			<h3>Push</h3>
-			<!--Add Content Here-->
-		</div>
-		<div class="row">
-			<h3>Pull</h3>
-			<!--Add Content Here-->
-		</div>
-		<div class="row">
-			<h3>Remote Add / Remove / Show</h3>
-			<!--Add Content Here-->
-		</div>
-		<div class="row">
-			<h3>Status</h3>
-			<!--Add Content Here-->
-		</div>
-		<div class="row">
-			<h3>Master Branch</h3>
-			<!--Add Content Here-->
-		</div>
-	</div>
-	
-	<footer class="text-center p-3 text-light" style="background: rgba(95,95,95,1.00)">
-		<span class="align-middle">@Ido Tanne, Johnny Pillacela, Mohammed Uddin</span>
-	</footer>
-	
-	
-	
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="navContent">
+        <a class="navbar-brand" href="#">Git Collab</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="docs/group.html">Group Tutorial</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-	<script src="js/jquery-3.3.1.min.js"></script> 
-	<!-- Include all compiled plugins (below), or include individual files as needed --> 
-	<script src="js/popper.min.js"></script> 
-	<script src="js/bootstrap-4.3.1.js"></script>
+<div class="container" style="height: 100vh; margin-top: 20px">
+    <div class="row">
+        <h3>Repository</h3>
+        <!--Add Content Here-->
+    </div>
+    <div class="row">
+        <h3>Clone</h3>
+        <!--Add Content Here-->
+    </div>
+    <div class="row">
+        <h3>Fork</h3>
+        <!--Add Content Here-->
+    </div>
+    <div class="row">
+        <h3>Branch</h3>
+        <!--Add Content Here-->
+    </div>
+    <div class="row">
+        <h3>Commit</h3>
+        <!--Add Content Here-->
+    </div>
+    <div class="row">
+        <h3>Merge</h3>
+        <!--Add Content Here-->
+    </div>
+    <div class="row">
+        <h3>Checkout</h3>
+        <!--Add Content Here-->
+        <p>
+            A Checkout is the process of switching between branches while using git. Atlsassian puts it as, “a
+            "checkout" is the act of switching between different versions of a target entity. The git checkout command
+            operates upon three distinct entities: files, commits, and branches. In addition to the definition of
+            "checkout" the phrase "checking out" is commonly used to imply the act of executing the git checkout
+            command.”
+        </p>
+        <p>
+            By default, when using git, you are in the master branch. There must be an already existing branch in order
+            to execute the checkout command.
+        </p>
+        <p>
+            A new branch can be created by typing the following command:
+        </p>
+        <ul>
+            <li>
+                <p> git branch exampleBranch </p>
+            </li>
+        </ul>
+        <p>
+            Since exampleBranch exists we can switch into that branch. If exampleBranch did not exist we would have
+            gotten an error message
+        </p>
+        <p>
+            A simple way to switch into a new branch without having an existing branch by using the following command
+        </p>
+        <ul>
+            <li>
+                <p> git checkout -b exampleBranch1 </p>
+            </li>
+        </ul>
+        <p>
+            Here, “git checkout -b” is the command and “exampleBranch1” is the new branch that we are creating. Since we
+            use “-b” this command creates a new branch and because of checkout we switch into that new branch
+            automatically.
+        </p>
+    </div>
+    <div class="row">
+        <h3>Push</h3>
+        <!--Add Content Here-->
+        <p>
+            Git push is a command that allows you to upload your local edited code to a remote repository. If you made
+            many commits, writing git push would upload and “push” your commits to the remote repository.
+        </p>
+        <p>
+            Git Push can be used as follows
+        </p>
+
+        <ul>
+            <li>
+                <p> git push &ltremote&gt &ltbranch&gt </p>
+            </li>
+        </ul>
+
+        <p>
+            &ltremote&gt being the remote repository
+        </p>
+        <p>
+            &ltbranch&gt being the current branch you are on or the branch that you wish to upload to the remote
+            repository.
+        </p>
+
+    </div>
+    <div class="row">
+        <h3>Pull</h3>
+        <!--Add Content Here-->
+    </div>
+    <div class="row">
+        <h3>Remote Add / Remove / Show</h3>
+        <!--Add Content Here-->
+    </div>
+    <div class="row">
+        <h3>Status</h3>
+        <!--Add Content Here-->
+    </div>
+    <div class="row">
+        <h3>Master Branch</h3>
+        <!--Add Content Here-->
+    </div>
+</div>
+
+<footer class="text-center p-3 text-light" style="background: rgba(95,95,95,1.00)">
+    <span class="align-middle">@Ido Tanne, Johnny Pillacela, Mohammed Uddin</span>
+</footer>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.3.1.js"></script>
 </body>
 </html>
