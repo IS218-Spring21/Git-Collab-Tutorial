@@ -28,6 +28,53 @@
 
 <div class="container" style="margin-top: 20px;">
     <div class="row">
+        <div class="col-xl-12">
+            <h3>GitFlow</h3>
+            <p>
+                GitFlow is at the very basic level a branching model by Vicent Driessen. According to Kumer, “git-flow are a set of git extensions to provide high-level repository operations for Vincent Driessen's branching model.
+            </p>
+            <p>
+                Gitflow works best under environments that have schedule release cycles. Branches can be created for specific features, for upcoming releases, and even future releases all simultaneously.
+            </p>
+            <img class="img-fluid" src="imgs/gitflow.PNG" alt="git flow">
+            <p>
+                Benefits of using gitflow:
+            </p>
+            <ul>
+                <li>
+                    Parallel Development
+                </li>
+                <li>
+                    Collaboration
+                </li>
+                <li>
+                    Release Staging Area
+                </li>
+                <li>
+                    Support For Emergency Fixes
+                </li>
+            </ul>
+            <p>
+                Some basic commands when using git flow include
+            </p>
+            <ol>
+                <li>
+                    <code>git flow init</code>
+                </li>
+                <li>
+                    <code>git flow feature start &ltfeatureName&gt</code>
+                </li>
+                <li>
+                    <code>git flow feature finish &ltfeatureName&gt</code>
+                </li>
+                <li>
+                    <code>git flow feature publish &ltfeatureName&gt</code>
+                </li>
+            </ol>
+
+        </div>
+    </div>
+    <div class="row">
         <h3>Repository</h3>
         <!--Add Content Here-->
     </div>
@@ -72,7 +119,7 @@
             </p>
             <ul>
                 <li>
-                    <p> git branch exampleBranch </p>
+                    <p> <code>git branch &ltexampleBranch&gt</code> </p>
                 </li>
             </ul>
             <p>
@@ -84,7 +131,7 @@
             </p>
             <ul>
                 <li>
-                    <p> git checkout -b exampleBranch1 </p>
+                    <p> <code>git checkout -b &ltexampleBranch1&gt</code> </p>
                 </li>
             </ul>
             <p>
@@ -109,7 +156,7 @@
 
 			<ul>
 				<li>
-					<p> git push &ltremote&gt &ltbranch&gt </p>
+                    <p> <code>git push &ltremote&gt &ltbranch&gt</code> </p>
 				</li>
 			</ul>
 
@@ -135,7 +182,7 @@
             </p>
             <ul>
                 <li>
-                    git pull &ltremote&gt
+                    <code>git pull &ltremote&gt</code>
                 </li>
             </ul>
             <p>
@@ -152,7 +199,7 @@
             </p>
             <ul>
                 <li>
-                    git remote add &ltname&gt &lturl&gt
+                    <code>git remote add &ltname&gt &lturl&gt</code>
                 </li>
             </ul>
             <p>
@@ -166,7 +213,7 @@
             </p>
             <ul>
                 <li>
-                    git remote remove &ltname&gt
+                    <code>git remote remove &ltname&gt</code>
                 </li>
             </ul>
             <p>
@@ -177,7 +224,7 @@
             </p>
             <ul>
                 <li>
-                    git remote show
+                    <code>git remote show</code>
                 </li>
                 <li>
                     If we name the remote repository “origin” then, this command would output origin.
@@ -188,7 +235,7 @@
             </p>
             <ul>
                 <li>
-                    git remote -v
+                    <code>git remote -v</code>
                 </li>
             </ul>
             <p>
