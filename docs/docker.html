@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker Page</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap-4.3.1.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Git Collab</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="group.html">Group Tutorial</a></li>
+                    <li class="nav-item active"><a href="#" class="nav-link">Docker<span class="sr-only">(current)</span></a></li>
+                </ul>
+            </div>
+        </div>    
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-xl-12">
+                <h3>What is Docker?</h3>
+            </div>
+            <div class="col-xl-12">
+                <p>Docker is an open source project that makes it easier to create containers and container-based apps. Docker is also used to organize depedencies based on the project, so a user doesn't need to have random and unused depedencies on their system.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <h3>Why we use Docker?</h3>
+            </div>
+            <div class="col-xl-12">
+                <p>Docker also has an amazing community that has built many containers already for different programs, so it removes the need of reinventing the wheel.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <h3>How to use Docker?</h3>
+            </div>
+            <div class="col-xl-12">
+                <p><i>From <a href="https://www.scalyr.com/blog/create-docker-image/">https://www.scalyr.com/blog/create-docker-image/</a></i></p>
+                <h5>Step 1: Create a Base Container</h5>
+                <p>The Docker create command will create a new container for us from the command line:</p>
+                <p><code>docker - create --name nginx_base -p 80:80 nginx:alpine</code></p>                
+                <p>If you don’t have the nginx:alpine image in your local docker image repository, it will download automatically. When this happens, you will see something like this:</p>
+                <img src="../imgs/Docker_NGIX_Installed.png" alt="nginx installed" class="img-fluid">
+                <h5>Step 2: Inspect Images</h5>
+                <p>Run the command:</p>
+                <p><code>docker images</code></p>
+                <p>If you look at the list of images on your system, you will now see the nginx:alpine image.</p>
+                <h5>Step 3: Inspect Containers</h5>
+                <p>Run the command:</p>
+                <p><code>docker ps -a</code></p>
+                <p>Note here that the container is not running, so you won’t see it in the container list unless you use the -a flag (-a is for all).</p>
+                <h5>Step 4: Start the Container</h5>
+                <p>Now we start the nginx container</p>
+                <p><code>docker start nginx_base</code></p>
+                <p>If you visit <a href="http://localhost">http://localhost</a>. You should now see your nginx container.</p>
+                <h5>Step 5: Modify the Running Container</h5>
+                <p>So if you wanted to modify this running container so that it behaves in a specific way, there are a variety of ways to do that.</p>
+                <p>In order to keep things as simple as possible, we are just going to copy a new index.html file onto the server. You could do practically anything you wanted here.</p>
+                <p>Let’s create a new index.html file and copy it onto the running container. Using an editor on your machine, create an index.html file in the same directory that you have been running Docker commands from.</p>
+                <p>Then save the file and return to the command line. We will use the docker cp command to copy this file onto the running container.</p>
+                <p><code>docker cp index.html nginx_base:/usr/share/nginx/html/index.html</code></p>
+                <p>Now reload your browser or revisit <a href="http://localhost">http://localhost</a>. You will see the edits made in your index.html file.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center p-3 text-light" style="background: rgba(95,95,95,1.00)">
+        <span class="align-middle">@Ido Tanne, Johnny Pillacela, Mohammed Uddin</span>
+    </footer>
+    
+</body>
+</html>
