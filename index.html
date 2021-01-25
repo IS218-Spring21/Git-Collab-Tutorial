@@ -1,87 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Git Collab Tutorial</title>
-	<!-- Bootstrap -->
-	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Git Collab Tutorial</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
-	  <a class="navbar-brand" href="#">Git Collab</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav ml-auto">
-		  <li class="nav-item active"> <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a> </li>
-		  <li class="nav-item"> <a class="nav-link" href="docs/group.html">Group Tutorial</a> </li>
-		</ul>
-	  </div>
-	</nav>
-	
-	<div class="container" style="height: 100vh;">
-		<div class="row">
-			<h3>Repository</h3>
-			<!--Add Content Here-->
-		</div>
-		<div class="row">
-			<h3>Clone</h3>
-			<!--Add Content Here-->
-		</div>
-		<div class="row">
-			<h3>Fork</h3>
-			<!--Add Content Here-->
-		</div>
-		<div class="row">
-			<h3>Branch</h3>
-			<!--Add Content Here-->
-		</div>
-		<div class="row">
-			<h3>Commit</h3>
-			<!--Add Content Here-->
-		</div>
-		<div class="row">
-			<h3>Merge</h3>
-			<!--Add Content Here-->
-		</div>
-		<div class="row">
-			<h3>Checkout</h3>
-			<!--Add Content Here-->
-		</div>
-		<div class="row">
-			<h3>Push</h3>
-			<!--Add Content Here-->
-		</div>
-		<div class="row">
-			<h3>Pull</h3>
-			<!--Add Content Here-->
-		</div>
-		<div class="row">
-			<h3>Remote Add / Remove / Show</h3>
-			<!--Add Content Here-->
-		</div>
-		<div class="row">
-			<h3>Status</h3>
-			<!--Add Content Here-->
-		</div>
-		<div class="row">
-			<h3>Master Branch</h3>
-			<!--Add Content Here-->
-		</div>
-	</div>
-	
-	<footer class="text-center p-3 text-light" style="background: rgba(95,95,95,1.00)">
-		<span class="align-middle">@Ido Tanne, Johnny Pillacela, Mohammed Uddin</span>
-	</footer>
-	
-	
-	
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Git Collab</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="docs/group.html">Group Tutorial</a></li>
+        </ul>
+    </div>
+</nav>
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-	<script src="js/jquery-3.3.1.min.js"></script> 
-	<!-- Include all compiled plugins (below), or include individual files as needed --> 
-	<script src="js/popper.min.js"></script> 
-	<script src="js/bootstrap-4.3.1.js"></script>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-xl-12">
+            <h3>Repository</h3>
+        </div>
+        <div class="col-xl-12">
+            <p>
+                A git repository is the .git folder withing your project directory. It contains all of the modifications
+                you've made in your project. It is the storing of this history that makes git such a powerful tool.
+                Using this history we are able go back to previous version and save the current version while we make
+                new changes so we don't overwrite anything or accidentally mess anything up. We can store our Git
+                repositories locally on our machines or use online hosts like Github which take advantage of Git
+                repositories to allow for collaboration.
+            </p>
+            <p>
+                We can initialize an repo using <br><code>git init</code><br>
+                We can add file to the repo for tracking using <br><code>git add &ltfile-name&gt</code><br>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-12">
+            <h3>Clone</h3>
+        </div>
+        <div class="col-xl-12">
+            <p>
+                Just as the name implies Clone (git clone) allows us to clone, or create a copy, of a repository. We can
+                even clone parts of the repository while leaving other parts alone, we'll get to this in branching.
+                We often use clone to grab a copy of a remote repository and put it onto our local machine.
+            </p>
+            <p>
+                To clone a repo we use the following command <br><code>git clone &ltrepo-name&gt</code><br>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-12">
+            <h3>Fork</h3>
+        </div>
+        <div class="col-xl-12">
+            <p>
+                Forking like cloning creates a copy of the repository in question.
+                The important distinction being that cloning creates a copy on our local machine whereas a forking a
+                repo will create a copy of that repo on your own github account.
+            </p>
+            <p>
+                To fork a github repo go ahead and navigate to it and click the fork button on the top right side of the
+                screen.
+            </p>
+            <img class="img-fluid" src="imgs/fork_button.jpg" alt="zoom in of fork button on a github repo">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-12">
+            <h3>Branch</h3>
+        </div>
+        <div class="col-xl-12">
+            <p>
+                Branches in git allow us to work on parts of our code independently from others. For example, if you
+                want to add a new feature while maintaining your current code you may want to create a new branch and
+                add that feature there. Branches are often used to add in new features and are especially useful when
+                used for collaboration
+                through a remote repo. Each member of the team may create a new branch and add in their own unique
+                features and then merge the code.
+            </p>
+            <p>
+                To create a new branch in your repo go ahead an use this command <br><code>git branch
+                &ltbranch-name&gt</code><br>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-12">
+            <h3>Commit</h3>
+        </div>
+        <div class="col-xl-12">
+            <p>
+                We can imagine each branch as a line with many snapshots of our code that together create a detailed
+                history of our project. It is these snapshots that allow us to move back in time to older code that we
+                may saved. This process of saving and creating new snapshots is what is called committing. When we commit a change
+                to our branch imagine a new snapshot popping onto that line of history. It also helps to leave message detailing what new changes were made in this commit so that we know what we are looking at if we look back
+            </p>
+            <p>
+                The following command allows to create a commit within our git repo <br><code>git commit -m "&ltmessage
+                detailing our work&gt"</code><br>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-12">
+            <h3>Merge</h3>
+        </div>
+        <div class="col-xl-12">
+			<p>
+				Having a branch for a new feature is a great and useful idea but at some point we want to combine it all especially before sending it out into the world. This is where the merge command comes in, merge allows us to put all of our branches together into a branch of our choosing. The merge command will merge the branch of our choosing to the branch we are currently on.
+			</p>
+			<p>
+				You can merge branches using the following command <br><code>git merge &ltbranch-name&gt</code><br>
+			</p>
+        </div>
+    </div>
+    <div class="row">
+        <h3>Checkout</h3>
+        <!--Add Content Here-->
+    </div>
+    <div class="row">
+        <h3>Push</h3>
+        <!--Add Content Here-->
+    </div>
+    <div class="row">
+        <h3>Pull</h3>
+        <!--Add Content Here-->
+    </div>
+    <div class="row">
+        <h3>Remote Add / Remove / Show</h3>
+        <!--Add Content Here-->
+    </div>
+    <div class="row">
+        <h3>Status</h3>
+        <!--Add Content Here-->
+    </div>
+    <div class="row">
+        <h3>Master Branch</h3>
+        <!--Add Content Here-->
+    </div>
+</div>
+
+<footer class="text-center p-3 text-light" style="background: rgba(95,95,95,1.00)">
+    <span class="align-middle">@Ido Tanne, Johnny Pillacela, Mohammed Uddin</span>
+</footer>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.3.1.js"></script>
 </body>
 </html>
