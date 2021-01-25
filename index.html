@@ -123,41 +123,198 @@
 			</p>
         </div>
     </div>
-    <div class="row">
-        <h3>Checkout</h3>
-        <!--Add Content Here-->
-    </div>
-    <div class="row">
-        <h3>Push</h3>
-        <!--Add Content Here-->
-    </div>
-    <div class="row">
-        <h3>Pull</h3>
-        <!--Add Content Here-->
-    </div>
-    <div class="row">
-        <h3>Remote Add / Remove / Show</h3>
-        <!--Add Content Here-->
-    </div>
-    <div class="row">
-        <h3>Status</h3>
-        <!--Add Content Here-->
-    </div>
-    <div class="row">
-        <h3>Master Branch</h3>
-        <!--Add Content Here-->
-    </div>
-</div>
+        <div class="row">
+            <div class="col-xl-12">
+                <h3>Checkout</h3>
+            </div>
+            <div class="col-xl-12">
+                <p>
+                A Checkout is the process of switching between branches while using git. Atlsassian puts it as, “a
+                "checkout" is the act of switching between different versions of a target entity. The git checkout command
+                operates upon three distinct entities: files, commits, and branches. In addition to the definition of
+                "checkout" the phrase "checking out" is commonly used to imply the act of executing the git checkout
+                command.”
+                </p>
+                <p>
+                    By default, when using git, you are in the master branch. There must be an already existing branch in order
+                    to execute the checkout command.
+                </p>
+                <p>
+                    A new branch can be created by typing the following command:
+                </p>
+                <ul>
+                    <li>
+                        <p> <code>git branch &ltexampleBranch&gt</code> </p>
+                    </li>
+                </ul>
+                <p>
+                    Since exampleBranch exists we can switch into that branch. If exampleBranch did not exist we would have
+                    gotten an error message
+                </p>
+                <p>
+                    A simple way to switch into a new branch without having an existing branch by using the following command
+                </p>
+                <ul>
+                    <li>
+                        <p> <code>git checkout -b &ltexampleBranch1&gt</code> </p>
+                    </li>
+                </ul>
+                <p>
+                    Here, “git checkout -b” is the command and “exampleBranch1” is the new branch that we are creating. Since we
+                    use “-b” this command creates a new branch and because of checkout we switch into that new branch
+                    automatically.
+                </p>
+            </div>        
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <h3>Push</h3>
+            </div>
+            <div class="col-xl-12">
+                <p>
+                    Git push is a command that allows you to upload your local edited code to a remote repository. If you made
+                    many commits, writing git push would upload and “push” your commits to the remote repository.
+                </p>
+                <p>
+                    Git Push can be used as follows
+                </p>
 
-<footer class="text-center p-3 text-light" style="background: rgba(95,95,95,1.00)">
-    <span class="align-middle">@Ido Tanne, Johnny Pillacela, Mohammed Uddin</span>
-</footer>
+                <ul>
+                    <li>
+                        <p> <code>git push &ltremote&gt &ltbranch&gt</code> </p>
+                    </li>
+                </ul>
+
+                <p>
+                    &ltremote&gt being the remote repository
+                </p>
+                <p>
+                    &ltbranch&gt being the current branch you are on or the branch that you wish to upload to the remote
+                    repository.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <h3>Pull</h3>
+            </div>
+            <div class="col-xl-12">
+                <p>
+                    When starting a project locally you might have code in a remote repository. In order to retrieve that code, git pull downloads the code from the remote repository into your local files. Git pull is the opposite of git push.
+                </p>
+                <p>
+                    Git pull can be used as follows
+                </p>
+                <ul>
+                    <li>
+                        <code>git pull &ltremote&gt</code>
+                    </li>
+                </ul>
+                <p>
+                    Where &ltremote&gt is the name of the remote repository.
+                </p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <h3>Remote Add / Remove / Show</h3>
+                <p>
+                    We mentioned pushing and pulling from a remote repository. In order to tell Git which repository we want to pull or push from we need to tell git by using the git remote add command.
+                </p>
+                <ul>
+                    <li>
+                        <code>git remote add &ltname&gt &lturl&gt</code>
+                    </li>
+                </ul>
+                <p>
+                    &ltname&gt is the name you choose to name the remote repository. By default, many people name the remote repository as “origin”
+                </p>
+                <p>
+                    &lturl&gt is the url of the remote repository. It is an https link.
+                </p>
+                <p>
+                    Since we are able to add repositories we can also remove them. This can be done as:
+                </p>
+                <ul>
+                    <li>
+                        <code>git remote remove &ltname&gt</code>
+                    </li>
+                </ul>
+                <p>
+                    Where &ltname&gt is the name you assigned to the remote repository when adding it.
+                </p>
+                <p>
+                    If we were to forget what we named the remote repository we are pushing or pulling from we use the following command.
+                </p>
+                <ul>
+                    <li>
+                        <code>git remote show</code>
+                    </li>
+                    <li>
+                        If we name the remote repository “origin” then, this command would output origin.
+                    </li>
+                </ul>
+                <p>
+                    If we wanted to know the url of the remote repository, then a similar command would be needed.
+                </p>
+                <ul>
+                    <li>
+                        <code>git remote -v</code>
+                    </li>
+                </ul>
+                <p>
+                    This command would display the remote url.
+                </p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <h3>Status</h3>
+                <p>
+                    Git status is a command that allows you to see the status of your current branch. Since the last commit was made, any new changes would appear when this command is typed. Git status also displays the branch you are currently working on. The following image shows what the “git status” command displays.
+                </p>
+                <img class="img-fluid" src="imgs/gitStatus.PNG" alt="git status display">
+                <br>
+                <br>
+                <p>
+                    Overall the “git status” command displays the following:
+                </p>
+                <ul>
+                    <li>
+                        Current branch
+                    </li>
+                    <li>
+                        Changes staged for commit
+                    </li>
+                    <li>
+                        Changed not staged for commit
+                    </li>
+                    <li>
+                        Untracked files
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <h3>Master Branch</h3>
+                <p>
+                    The master branch is the default branch that you are in when you create a new local git repository. Every time a commit is made in the master branch, you will still be in this branch. The master branch is not in any war or form special from other branches that you may create.
+                </p>
+            </div>
+        </div>
+
+        <footer class="text-center p-3 text-light" style="background: rgba(95,95,95,1.00)">
+            <span class="align-middle">@Ido Tanne, Johnny Pillacela, Mohammed Uddin</span>
+        </footer>
 
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery-3.3.1.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap-4.3.1.js"></script>
-</body>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap-4.3.1.js"></script>
+    </body>
 </html>
