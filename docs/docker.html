@@ -24,7 +24,7 @@
         </div>    
     </nav>
 
-    <div class="container mt-5">
+    <div class="container mt-5 mb-5">
         <div class="row">
             <div class="col-xl-12">
                 <h3>What is Docker?</h3>
@@ -50,8 +50,7 @@
                 <h5>Step 1: Create a Base Container</h5>
                 <p>The Docker create command will create a new container for us from the command line:</p>
                 <p><code>docker - create --name nginx_base -p 80:80 nginx:alpine</code></p>                
-                <p>If you don’t have the nginx:alpine image in your local docker image repository, it will download automatically. When this happens, you will see something like this:</p>
-                <img src="../imgs/Docker_NGIX_Installed.png" alt="nginx installed" class="img-fluid">
+                <p>If you don’t have the nginx:alpine image in your local docker image repository, it will download automatically. When this happens, you will see something like this: <img src="../imgs/Docker_NGIX_Installed.png" alt="nginx installed" class="img-fluid"></p>
                 <h5>Step 2: Inspect Images</h5>
                 <p>Run the command:</p>
                 <p><code>docker images</code></p>
