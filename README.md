@@ -40,3 +40,16 @@ Added GitFlow section - Johnny Pillacela <br>
 ### Jan 28, 2021
 Spell checked site - Ido Tanne <br>
 Added Favicon - Ido Tanne <br>
+### Feb 1, 2021
+Deleted Repository section - Mohammed Uddin <br>
+Deleted Clone section - Mohammed Uddin <br>
+Deleted Fork section - Mohammed Uddin <br>
+Deleted Branch section - Mohammed Uddin <br> 
+Deleted Commit section - Mohammed Uddin <br>
+Deleted Merge section - Mohammed Uddin <br>
+Added Repository section - Mohammed Uddin <br>
+Added Clone section - Mohammed Uddin <br>
+Added Fork section - Mohammed Uddin <br>
+Added Branch section - Mohammed Uddin <br> 
+Added Commit section - Mohammed Uddin <br>
+Added Merge section - Mohammed Uddin <br>
