@@ -8,10 +8,10 @@ Mohammed Uddin | [mohdAkibUddin](https://github.com/orgs/IS218-Spring21/people/m
 ## Sources
 Source Name [Source link](https://google.com)
 
-Added Repository section - Mohammed Uddin \n
-Added Clone section - Mohammed Uddin
-Added Fork section - Mohammed Uddin
-Added Branch section - Mohammed Uddin
-Added Commit section - Mohammed Uddin
-Added Merge section - Mohammed Uddin
-Made styling consistent using bootstrap rows and columns - Mohammed Uddin
+Added Repository section - Mohammed Uddin <br>
+Added Clone section - Mohammed Uddin <br>
+Added Fork section - Mohammed Uddin <br>
+Added Branch section - Mohammed Uddin <br> 
+Added Commit section - Mohammed Uddin <br>
+Added Merge section - Mohammed Uddin <br>
+Made styling consistent using bootstrap rows and columns - Mohammed Uddin <br>
