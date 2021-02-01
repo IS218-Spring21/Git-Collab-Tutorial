@@ -6,7 +6,7 @@ Ido Tanne | [Itanne99](https://github.com/itanne99) <br>
 Johnny Pillacela | [JohnnyPillacela](https://github.com/JohnnyPillacela)<br>
 Mohammed Uddin | [mohdAkibUddin](https://github.com/orgs/IS218-Spring21/people/mohdAkibUddin)
 ## Sources
-Source Name [Source link](https://google.com)
+git docs [Source link](https://git-scm.com)
 
 ## Changelog
 ### Jan 19, 2021
