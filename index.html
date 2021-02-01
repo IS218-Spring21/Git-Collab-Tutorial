@@ -91,6 +91,7 @@
                         new changes so we don't overwrite anything or accidentally mess anything up. We can store our Git
                         repositories locally on our machines or use online hosts like Github which take advantage of Git
                         repositories to allow for collaboration.
+
                     </p>
                     <p>
                         We can initialize an repo using <br><code>git init</code><br>
@@ -107,6 +108,7 @@
                         Just as the name implies Clone (git clone) allows us to clone, or create a copy, of a repository. We can
                         even clone parts of the repository while leaving other parts alone, we'll get to this in branching.
                         We often use clone to grab a copy of a remote repository and put it onto our local machine.
+                        To clone a repo we use the following command <br><code>git clone &ltrepo-name&gt</code><br>
                     </p>
                     <p>
                         To clone a repo we use the following command <br><code>git clone &ltrepo-name&gt</code><br>
@@ -158,7 +160,7 @@
                         We can imagine each branch as a line with many snapshots of our code that together create a detailed
                         history of our project. It is these snapshots that allow us to move back in time to older code that we
                         may saved. This process of saving and creating new snapshots is what is called committing. When we commit a change
-                        to our branch imagine a new snapshot popping onto that line of history. It also helps to leave message detailing what new changes were made in this commit so that we know what we are looking at if we look back
+                        to our branch imagine a new snapshot popping onto that line of history. It also helps to leave message detailing what new changes were made in this commit so that we know what we are looking at if we look back.
                     </p>
                     <p>
                         The following command allows to create a commit within our git repo <br><code>git commit -m "&ltmessage
@@ -172,7 +174,10 @@
                 </div>
                 <div class="col-xl-12">
                     <p>
-                        Having a branch for a new feature is a great and useful idea but at some point we want to combine it all especially before sending it out into the world. This is where the merge command comes in, merge allows us to put all of our branches together into a branch of our choosing. The merge command will merge the branch of our choosing to the branch we are currently on.
+                        Having a branch for a new feature is a great and useful idea but at some point we want to
+                        combine it all especially before sending it out into the world. This is where the merge command
+                        comes in, merge allows us to put all of our branches together into a branch of our choosing.
+                        The merge command will merge the branch of our choosing to the branch we are currently on.
                     </p>
                     <p>
                         You can merge branches using the following command <br><code>git merge &ltbranch-name&gt</code><br>
