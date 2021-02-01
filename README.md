@@ -25,7 +25,8 @@ Added Pull section - Johnny Pillacela <br>
 Added Remote Add/Remove/Show section - Johnny Pillacela <br> 
 Added Status section - Johnny Pillacela <br>
 Added Master Branch section - Johnny Pillacela <br>
-Added <&lt;code&gt;> tags to git commands - Johnny Pillacela <br>
+Added images for my section - Johnny Pillacela <br>
+Added &lt;code&gt; tags to git commands - Johnny Pillacela <br>
 ### Jan 25, 2021
 Improved navbar design - Ido Tanne <br>
 Added Repository section - Mohammed Uddin <br>
