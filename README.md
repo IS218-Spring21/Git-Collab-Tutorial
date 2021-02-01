@@ -6,7 +6,7 @@ Ido Tanne | [Itanne99](https://github.com/itanne99) <br>
 Johnny Pillacela | [JohnnyPillacela](https://github.com/JohnnyPillacela)<br>
 Mohammed Uddin | [mohdAkibUddin](https://github.com/orgs/IS218-Spring21/people/mohdAkibUddin)
 ## Sources
-Source Name [Source link](https://google.com)
+git docs [Source link](https://git-scm.com)
 
 ## Changelog
 ### Jan 19, 2021
@@ -25,7 +25,8 @@ Added Pull section - Johnny Pillacela <br>
 Added Remote Add/Remove/Show section - Johnny Pillacela <br> 
 Added Status section - Johnny Pillacela <br>
 Added Master Branch section - Johnny Pillacela <br>
-Added <&lt;code&gt;> tags to git commands - Johnny Pillacela <br>
+Added images for my section - Johnny Pillacela <br>
+Added &lt;code&gt; tags to git commands - Johnny Pillacela <br>
 ### Jan 25, 2021
 Improved navbar design - Ido Tanne <br>
 Added Repository section - Mohammed Uddin <br>
@@ -39,3 +40,16 @@ Added GitFlow section - Johnny Pillacela <br>
 ### Jan 28, 2021
 Spell checked site - Ido Tanne <br>
 Added Favicon - Ido Tanne <br>
+### Feb 1, 2021
+Deleted Repository section - Mohammed Uddin <br>
+Deleted Clone section - Mohammed Uddin <br>
+Deleted Fork section - Mohammed Uddin <br>
+Deleted Branch section - Mohammed Uddin <br> 
+Deleted Commit section - Mohammed Uddin <br>
+Deleted Merge section - Mohammed Uddin <br>
+Added Repository section - Mohammed Uddin <br>
+Added Clone section - Mohammed Uddin <br>
+Added Fork section - Mohammed Uddin <br>
+Added Branch section - Mohammed Uddin <br> 
+Added Commit section - Mohammed Uddin <br>
+Added Merge section - Mohammed Uddin <br>
